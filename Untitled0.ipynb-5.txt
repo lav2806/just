@@ -1,0 +1,342 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_icWUFgpsY_5",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 237
+        },
+        "outputId": "be73ff57-813d-4cd4-e62a-1279c820264b"
+      },
+      "source": [
+        "def add(a, b):\n",
+        "    return a + b\n",
+        "def subtract(a,b):\n",
+        "    return a-b\n",
+        "def multiplication(a, b):\n",
+        "    return a * b\n",
+        "def division(a, b):\n",
+        "    return a / b\n",
+        "def modulus(a, b):\n",
+        "    return a % b\n",
+        "def exponent(a, b):\n",
+        "    return a ** b\n",
+        "def floordivision(a, b):\n",
+        "    return a // b\n",
+        "\n",
+        "print(\"Select operation.\")\n",
+        "print(\"1.add\")\n",
+        "print(\"2.subtract\")\n",
+        "print(\"3.multiplication\")\n",
+        "print(\"4.Division\")\n",
+        "print(\"5.modulus\")\n",
+        "print(\"6.exponent\")\n",
+        "print(\"7.floordivision\")\n",
+        "\n",
+        "while  True:\n",
+        "  choice=input(\"enter choice(1/2/3/4/5/6/7):\")\n",
+        "  if choice in ('1', '2', '3', '4','5','6','7'):\n",
+        "        num1 = float(input(\"Enter first number: \"))\n",
+        "        num2 = float(input(\"Enter second number: \"))\n",
+        "\n",
+        "        if choice == '1':\n",
+        "            print(num1, \"+\", num2, \"=\", add(num1, num2))\n",
+        "\n",
+        "        elif choice == '2':\n",
+        "            print(num1, \"-\", num2, \"=\", subtract(num1, num2))\n",
+        "\n",
+        "        elif choice == '3':\n",
+        "            print(num1, \"*\", num2, \"=\", multiplication(num1, num2))\n",
+        "\n",
+        "        elif choice == '4':\n",
+        "            print(num1, \"/\", num2, \"=\", division(num1, num2))\n",
+        "        elif choice == '5':\n",
+        "            print(num1, \"%\", num2, \"=\", modulus(num1, num2))\n",
+        "        elif choice == '6':\n",
+        "            print(num1, \"**\", num2, \"=\", exponent(num1, num2))\n",
+        "        elif choice == '7':\n",
+        "            print(num1, \"//\", num2, \"=\", floordivision(num1, num2))\n",
+        "        break\n",
+        "  else:\n",
+        "        print(\"Invalid Input\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "  \n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Select operation.\n",
+            "1.add\n",
+            "2.subtract\n",
+            "3.multiplication\n",
+            "4.Division\n",
+            "5.modulus\n",
+            "6.exponent\n",
+            "7.floordivision\n",
+            "enter choice(1/2/3/4/5/6/7):3\n",
+            "Enter first number: 2 \n",
+            "Enter second number: 3\n",
+            "2.0 * 3.0 = 6.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nuUPKzFI6qbU",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 90
+        },
+        "outputId": "3cb321e2-61ea-4bf4-9460-eced960559d5"
+      },
+      "source": [
+        "\n",
+        "p=float(input(\"enter the principle amt:\"))\n",
+        "t=float(input(\"enter the time:\"))\n",
+        "r=float(input(\"enter the rate\"))\n",
+        "si=(p*t*r)/100\n",
+        "print(\"the simple interest is {}\".format(si))\n"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the principle amt:1000\n",
+            "enter the time:2\n",
+            "enter the rate2\n",
+            "the simple interest is 40.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vQUR0AiV-Zj2",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "3b4a65eb-8a10-4b52-8f2a-861d3128fe9e"
+      },
+      "source": [
+        "radius=float(input(\"enter the radius:\"))\n",
+        "area=3.14*r*r\n",
+        "print(\"the area of circle is {}\".format(area))\n"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the radius:2\n",
+            "the raius of circle is12.56\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rRZoWphrEmt9",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VV1FC0qpButO",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "oVuFS8AnAyS2",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 72
+        },
+        "outputId": "07cf63ea-7796-4db2-edfd-7365eb47b389"
+      },
+      "source": [
+        "base=float(input(\"enter the base\"))\n",
+        "height=float(input(\"enter the height\"))\n",
+        "area=1/2*(base*height)\n",
+        "print(\"the area of triangle is {}\".format(area))"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the base2\n",
+            "enter the height1\n",
+            "the area of triangle is 1.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QUl2igRP3NEB",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "7348e94d-2d81-473f-d5ab-6ca7ec071f4d"
+      },
+      "source": [
+        "c=float(input(\"enter the temp in celsius\"))\n",
+        "f=(c*1.8)+32\n",
+        "print(\"the temp in F is {}\".format(f))"
+      ],
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the temp in celsius48\n",
+            "the temp in F is 118.4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Gf_9xaQVDbj9",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 72
+        },
+        "outputId": "f097d5a2-8341-42ad-f9f3-f1e16f671b93"
+      },
+      "source": [
+        "length=float(input(\"enter the length\"))\n",
+        "breadth=float(input(\"enter the breadth\"))\n",
+        "area=(length*breadth)\n",
+        "print(\"the area of rectangle is {}\".format(area))"
+      ],
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the length2\n",
+            "enter the breadth2\n",
+            "the area of rectangle is 4.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QazZ8_KbD7N8",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "a74a6454-3ac5-4fc7-c7bf-f948514d405d"
+      },
+      "source": [
+        "side=float(input(\"enter the side:\"))\n",
+        "p=(4*side)\n",
+        "print(\"the perimeter of square is {}\".format(p))\n"
+      ],
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the side:4\n",
+            "the perimeter of square is 16.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "THBIjc1xEp2Y",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "b044a6a0-de17-4d13-9a6c-e06b3fba264c"
+      },
+      "source": [
+        "radius=float(input(\"enter the radius:\"))\n",
+        "c=4*3.14*r\n",
+        "print(\"the circumference of circle is {}\".format(c))"
+      ],
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the radius:2\n",
+            "the circumference of circle is 25.12\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
